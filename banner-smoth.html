@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider - banner</title>
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+<link rel="stylesheet" type="text/css" href="revslider.css" media="screen" />
+<link rel="stylesheet" href="custom-slider.css">
+</head>
+<body>
+
+
+<section class="bannerHome">
+  <div class="bannercontainer">
+    <div class="banner" data-version="5.3.1.6">
+      <ul>
+        <!--  SLOT Zoom Horizontal-->
+        <li data-index="1" data-transition="slotzoom-horizontal" data-slotamount="5" data-masterspeed="1000"
+          data-fsmasterspeed="1000">
+          <img
+            src="https://media.wired.co.uk/photos/606da0d37aff197af7c72d46/4:3/w_1704,h_1278,c_limit/bosjes-_001-copy.jpg"
+            alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg"
+            data-bgparallax="10" data-no-retina="" />
+
+
+
+          <div class="bg_caption"></div>
+
+        </li>
+        <li data-index="2" data-transition="slotzoom-horizontal" data-slotamount="5" data-masterspeed="1000"
+          data-fsmasterspeed="1000">
+          <img
+            src="https://www.architecturalrecord.com/ext/resources/Issues/2016/May/1605-Architecture-Creativity-Zaha-Hadid-01.jpg?1461696438g"
+            alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg"
+            data-bgparallax="10" data-no-retina="" />
+          <div class="bg_caption"></div>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<!-- REVOLUTION BANNER JS FILES  -->
+<script type="text/javascript" src="plugin.min.js"></script>
+<script type="text/javascript" src="revslider.min.js"></script>
+
+<script>
+  $(".banner").revolution({
+    sliderType: "standard",
+    sliderLayout: "fullscreen",
+    dottedOverlay: "none",
+    
+    delay: 7000,
+    autoHeight: "on",
+    minHeight: 480,
+    navigation: {
+      keyboardNavigation: "off",
+      keyboard_direction: "horizontal",
+      onHoverStop: "on",
+      mouseScrollNavigation: "off",
+      mouseScrollReverse: "default",
+      touch: {
+        touchenabled: "on",
+        swipe_threshold: 75,
+        swipe_min_touches: 1,
+        swipe_direction: "horizontal",
+        drag_block_vertical: false,
+      },
+      bullets: {
+        enable: true,
+        hide_onmobile: true,
+
+        direction: "vertical",
+        h_align: "right",
+        v_align: "center",
+        h_offset: 80,
+        v_offset: 0,
+        space: 27,
+      },
+
+    },
+    responsiveLevels: [1920, 1199, 991, 768, 480],
+    visibilityLevels: [1920, 960, 991, 768, 480],
+    gridwidth: [1170, 1024, 991, 768, 480],
+    gridheight: [950, 768, 600, 600, 480],
+    lazyType: "none",
+    shadow: 0,
+    spinner: "off",
+    //  asi es sin autoplay, para autoplay cambiar a off, -1 , -1  
+    /*stopLoop: "on",
+    stopAfterLoops: 0,
+    stopAtSlide: 1,*/
+          stopLoop: "off",
+          stopAfterLoops: -1,
+          stopAtSlide: -1, 
+    shuffle: "off",
+    autoHeight: "off",
+    fullScreenAutoWidth: "off",
+    fullScreenAlignForce: "off",
+    fullScreenOffsetContainer: "",
+    fullScreenOffset: "",
+    disableProgressBar: "on",
+    hideThumbsOnMobile: "off",
+    hideSliderAtLimit: 0,
+    hideCaptionAtLimit: 0,
+    hideAllCaptionAtLilmit: 0,
+    debugMode: false,
+    fallbacks: {
+      simplifyAll: "off",
+      nextSlideOnWindowFocus: "off",
+      disableFocusListener: false,
+    },
+    parallax: {
+      type: "mouse",
+      origo: "slidercenter",
+      speed: 2000,
+      levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],
+    },
+  });
+
+</script>
+
+</body>
+</html>
